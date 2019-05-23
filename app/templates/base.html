@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'includes/head.html' %}
+
+    <body>
+        {% include 'includes/nav.html' %}
+        <div class="container">
+            {% include 'includes/messages.html' %}
+            {% block content %}
+            {% endblock %}
+            {% include 'includes/praetorian.html' %}
+        </div>
+        {% include 'includes/footer.html' %}
+    </body>
+</html>
